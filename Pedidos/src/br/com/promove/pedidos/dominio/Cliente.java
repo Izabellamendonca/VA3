@@ -2,6 +2,10 @@ package br.com.promove.pedidos.dominio;
 
 public class Cliente {
 	
+	public Cliente() {
+		
+	}
+	
 	public Cliente(int codigo, String nome, String fone, String email, boolean ativo) {
 		super();
 		this.codigo = codigo;
