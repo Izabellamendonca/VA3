@@ -8,11 +8,11 @@ public class Cliente {
 	
 	public Cliente(int codigo, String nome, String fone, String email, boolean ativo) {
 		super();
-		this.codigo = codigo;
-		this.nome = nome;
-		this.fone = fone;
-		this.email = email;
-		this.ativo = ativo;
+		setCodigo(codigo);
+		setNome(nome);
+		setFone(fone);
+		setEmail(email);
+		setAtivo(ativo);
 	}
 	
 	private int codigo;
