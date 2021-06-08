@@ -2,25 +2,25 @@ package br.com.promove.pedidos.dominio;
 
 public class Cliente {
 	
-	public Cliente() {
-		setAtivo(true);
-	}
-	
-	public Cliente(int codigo, String nome, String fone, String email) {
-		super();
-		setCodigo(codigo);
-		setNome(nome);
-		setFone(fone);
-		setEmail(email);
-		setAtivo(true);
-	}
-	
 	private int codigo;
 	private String nome;
 	private String fone;
 	private String email;
 	private boolean ativo;
 	private Endereco endereco;
+	
+	public Cliente() {
+		setAtivo(true);
+	}
+	
+	public Cliente(int codigo, String nome, String fone, String email, Endereco endereco) {
+		setCodigo(codigo);
+		setNome(nome);
+		setFone(fone);
+		setEmail(email);
+		setAtivo(true);
+		setEndereco(endereco);
+	}
 	
 	public Endereco getEndereco() {
 		return endereco;

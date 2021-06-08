@@ -9,7 +9,6 @@ public class Endereco {
 	private TipoUF uf;
 	
 	public Endereco(String logradouro, String cidade, String cep, TipoLogradouro tipoLogradouro, TipoUF uf) {
-		super();
 		this.setLogradouro(logradouro);
 		this.setCidade(cidade);
 		this.setCep(cep);

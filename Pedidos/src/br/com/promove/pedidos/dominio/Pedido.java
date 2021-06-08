@@ -1,6 +1,6 @@
 package br.com.promove.pedidos.dominio;
 
-public class Pedidos {
+public class Pedido {
 
 	private int codigo;
 	private String dataCriacao;

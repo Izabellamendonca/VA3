@@ -7,7 +7,29 @@ public class Transportadora {
 	private String fone;
 	private String email;
 	private boolean ativo;
+	private Endereco endereco;
 	
+	public Transportadora() {
+		this.setAtivo(true);
+	}
+	
+	public Transportadora(int codigo, String nome, String fone, String email, Endereco endereco) {
+		this.setCodigo(codigo);
+		this.setNome(nome);
+		this.setFone(fone);
+		this.setEmail(email);
+		this.setAtivo(true);
+		this.setEndereco(endereco);
+	}
+
+	public Endereco getEndereco() {
+		return endereco;
+	}
+
+	public void setEndereco(Endereco endereco) {
+		this.endereco = endereco;
+	}
+
 	public int getCodigo() {
 		return codigo;
 	}

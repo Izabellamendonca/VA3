@@ -1,13 +1,22 @@
 package br.com.promove.pedidos.dominio;
 
-public class Produtos {
+public class Produto {
 	
 	private int codigo;
 	private String nome;
 	private double valorCusto;
 	private double valorVenda;
 	private boolean ativo;
+	private TipoMedida medida;
 	
+	public TipoMedida getMedida() {
+		return medida;
+	}
+
+	public void setMedida(TipoMedida medida) {
+		this.medida = medida;
+	}
+
 	public int getCodigo() {
 		return codigo;
 	}

@@ -1,12 +1,33 @@
 package br.com.promove.pedidos.dominio;
 
-public class Itens {
+public class Item {
 	
 	private int codigo;
 	private int quantidade;
 	private double valorUnitario;
 	private double valorDesconto;
+	private Produto produto;
 	
+	public Item() {
+		
+	}
+	
+	public Item(int codigo, int quantidade, double valorUnitario, double valorDesconto, Produto produto) {
+		this.setCodigo(codigo);
+		this.setQuantidade(quantidade);
+		this.setValorUnitario(valorUnitario);
+		this.setValorDesconto(valorDesconto);
+		this.setProduto(produto);
+	}
+
+	public Produto getProduto() {
+		return produto;
+	}
+
+	public void setProduto(Produto produto) {
+		this.produto = produto;
+	}
+
 	public int getCodigo() {
 		return codigo;
 	}
