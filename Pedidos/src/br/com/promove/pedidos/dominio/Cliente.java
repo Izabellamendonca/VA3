@@ -3,16 +3,16 @@ package br.com.promove.pedidos.dominio;
 public class Cliente {
 	
 	public Cliente() {
-		
+		setAtivo(true);
 	}
 	
-	public Cliente(int codigo, String nome, String fone, String email, boolean ativo) {
+	public Cliente(int codigo, String nome, String fone, String email) {
 		super();
 		setCodigo(codigo);
 		setNome(nome);
 		setFone(fone);
 		setEmail(email);
-		setAtivo(ativo);
+		setAtivo(true);
 	}
 	
 	private int codigo;
@@ -57,7 +57,7 @@ public class Cliente {
 		return ativo;
 	}
 
-	public void setAtivo(boolean ativo) {
+	private void setAtivo(boolean ativo) {
 		this.ativo = ativo;
 	}
 
