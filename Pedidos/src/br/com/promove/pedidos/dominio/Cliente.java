@@ -20,6 +20,15 @@ public class Cliente {
 	private String fone;
 	private String email;
 	private boolean ativo;
+	private Endereco endereco;
+	
+	public Endereco getEndereco() {
+		return endereco;
+	}
+
+	public void setEndereco(Endereco endereco) {
+		this.endereco = endereco;
+	}
 
 	public int getCodigo() {
 		return codigo;
@@ -66,6 +75,5 @@ public class Cliente {
 		return "Cliente [codigo=" + codigo + ", nome=" + nome + ", fone=" + fone + ", email=" + email + ", ativo="
 				+ ativo + "]";
 	}
-	
 	
 }
