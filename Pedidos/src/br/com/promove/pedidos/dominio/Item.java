@@ -5,23 +5,23 @@ public class Item {
 	private int codigo;
 	private int quantidade;
 	private double valorUnitario;
-	private double valorDesconto;
+	private double percentualDesconto;
 	private Produto produto;
 
 	public Item() {
 
 	}
 
-	public Item(int codigo, int quantidade, double valorUnitario, double valorDesconto, Produto produto) {
+	public Item(int codigo, int quantidade, double valorUnitario, double percentualDesconto, Produto produto) {
 		this.setCodigo(codigo);
 		this.setQuantidade(quantidade);
 		this.setValorUnitario(valorUnitario);
-		this.setValorDesconto(valorDesconto);
+		this.setPercentualDesconto(percentualDesconto);
 		this.setProduto(produto);
 	}
 
 	public Double obterTotal() {
-		return getQuantidade() * getValorUnitario() - getValorDesconto();
+		return getQuantidade() * getValorUnitario() * (1-(getPercentualDesconto()*0.01));
 	}
 
 	public Produto getProduto() {
@@ -56,18 +56,18 @@ public class Item {
 		this.valorUnitario = valorUnitario;
 	}
 
-	public double getValorDesconto() {
-		return valorDesconto;
+	public double getPercentualDesconto() {
+		return percentualDesconto;
 	}
 
-	public void setValorDesconto(double valorDesconto) {
-		this.valorDesconto = valorDesconto;
+	public void setPercentualDesconto(double percentualDesconto) {
+		this.percentualDesconto = percentualDesconto;
 	}
 
 	@Override
 	public String toString() {
 		return "Item [codigo=" + codigo + ", quantidade=" + quantidade + ", valorUnitario=" + valorUnitario
-				+ ", valorDesconto=" + valorDesconto + ", produto=" + produto + "]";
+				+ ", valorDesconto=" + percentualDesconto + ", produto=" + produto + "]";
 	}
 
 }

@@ -28,8 +28,8 @@ public class Pedido {
 		this.setCliente(cliente);
 	}
 
-	public void adicionarItem(int codigo, int quantidade, double valorUnitario, double valorDesconto, Produto produto) {
-		Item item = new Item(codigo, quantidade, valorUnitario, valorDesconto, produto);
+	public void adicionarItem(int codigo, int quantidade, double valorUnitario, double percentualDesconto, Produto produto) {
+		Item item = new Item(codigo, quantidade, valorUnitario, percentualDesconto, produto);
 		itens.add(item);
 	}
 

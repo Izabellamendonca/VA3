@@ -26,7 +26,7 @@ public class Principal {
 
 		Pedido pedido1 = new Pedido(1, "08/06/2021", "10/06/2021", transportadora1, endereco1, cliente1);
 
-		pedido1.adicionarItem(7, 10, 1000, 100, produto1);
+		pedido1.adicionarItem(7, 10, 1000, 50, produto1);
 		pedido1.adicionarItem(11, 10, 500, 50, produto2);
 
 		System.out.print(pedido1.obterTotal());
