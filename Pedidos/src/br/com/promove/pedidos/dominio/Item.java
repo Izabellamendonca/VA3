@@ -20,6 +20,10 @@ public class Item {
 		this.setProduto(produto);
 	}
 
+	public Double obterTotal() {
+		return getQuantidade()*getValorUnitario()-getValorDesconto();
+	}
+	
 	public Produto getProduto() {
 		return produto;
 	}
@@ -58,10 +62,6 @@ public class Item {
 
 	public void setValorDesconto(double valorDesconto) {
 		this.valorDesconto = valorDesconto;
-	}
-
-	public double obterTotal(){
-		return 1;
 	}
 
 	@Override
