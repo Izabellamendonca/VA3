@@ -66,10 +66,8 @@ public class Item {
 
 	@Override
 	public String toString() {
-		return "Itens [codigo=" + codigo + ", quantidade=" + quantidade + ", valorUnitario=" + valorUnitario
-				+ ", valorDesconto=" + valorDesconto + "]";
+		return "Item [codigo=" + codigo + ", quantidade=" + quantidade + ", valorUnitario=" + valorUnitario
+				+ ", valorDesconto=" + valorDesconto + ", produto=" + produto + "]";
 	}
-
-	
 	
 }

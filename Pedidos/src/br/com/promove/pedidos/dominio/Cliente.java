@@ -73,7 +73,7 @@ public class Cliente {
 	@Override
 	public String toString() {
 		return "Cliente [codigo=" + codigo + ", nome=" + nome + ", fone=" + fone + ", email=" + email + ", ativo="
-				+ ativo + "]";
+				+ ativo + ", endereco=" + endereco + "]";
 	}
 	
 }

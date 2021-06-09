@@ -73,8 +73,7 @@ public class Transportadora {
 	@Override
 	public String toString() {
 		return "Transportadora [codigo=" + codigo + ", nome=" + nome + ", fone=" + fone + ", email=" + email
-				+ ", ativo=" + ativo + "]";
+				+ ", ativo=" + ativo + ", endereco=" + endereco + "]";
 	}
-	
 	
 }

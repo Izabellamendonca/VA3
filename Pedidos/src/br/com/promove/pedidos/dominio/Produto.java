@@ -9,6 +9,20 @@ public class Produto {
 	private boolean ativo;
 	private TipoMedida medida;
 	
+	public Produto() {
+		this.setAtivo(true);
+	}
+	
+	public Produto(int codigo, String nome, double valorCusto, double valorVenda,TipoMedida medida) {
+		super();
+		this.setCodigo(codigo);
+		this.setNome(nome);
+		this.setValorCusto(valorCusto);
+		this.setValorVenda(valorVenda);
+		this.setAtivo(true);
+		this.setMedida(medida);
+	}
+
 	public TipoMedida getMedida() {
 		return medida;
 	}
@@ -63,9 +77,10 @@ public class Produto {
 
 	@Override
 	public String toString() {
-		return "Produtos [codigo=" + codigo + ", nome=" + nome + ", valorCusto=" + valorCusto + ", valorVenda="
-				+ valorVenda + ", ativo=" + ativo + "]";
+		return "Produto [codigo=" + codigo + ", nome=" + nome + ", valorCusto=" + valorCusto + ", valorVenda="
+				+ valorVenda + ", ativo=" + ativo + ", medida=" + medida + "]";
 	}
+
 	
 	
 }
