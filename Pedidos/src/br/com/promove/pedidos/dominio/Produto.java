@@ -1,19 +1,19 @@
 package br.com.promove.pedidos.dominio;
 
 public class Produto {
-	
+
 	private int codigo;
 	private String nome;
 	private double valorCusto;
 	private double valorVenda;
 	private boolean ativo;
 	private TipoMedida medida;
-	
+
 	public Produto() {
 		this.setAtivo(true);
 	}
-	
-	public Produto(int codigo, String nome, double valorCusto, double valorVenda,TipoMedida medida) {
+
+	public Produto(int codigo, String nome, double valorCusto, double valorVenda, TipoMedida medida) {
 		super();
 		this.setCodigo(codigo);
 		this.setNome(nome);
@@ -71,7 +71,7 @@ public class Produto {
 		this.ativo = ativo;
 	}
 
-	public double obterTotal(){
+	public double obterTotal() {
 		return 1;
 	}
 
@@ -81,6 +81,4 @@ public class Produto {
 				+ valorVenda + ", ativo=" + ativo + ", medida=" + medida + "]";
 	}
 
-	
-	
 }

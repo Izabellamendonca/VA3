@@ -12,13 +12,13 @@ public class Pedido {
 	private Endereco enderecoEntrega;
 	private Cliente cliente;
 	private ArrayList<Item> itens = new ArrayList<Item>();
-	
+
 	public Pedido() {
-		
+
 	}
-	
-	
-	public Pedido(int codigo, String dataCriacao, String dataPrevisaoEntrega,Transportadora transportadora, Endereco enderecoEntrega, Cliente cliente) {
+
+	public Pedido(int codigo, String dataCriacao, String dataPrevisaoEntrega, Transportadora transportadora,
+			Endereco enderecoEntrega, Cliente cliente) {
 		this.setCodigo(codigo);
 		this.setDataCriacao(dataCriacao);
 		this.setDataPrevisaoEntrega(dataPrevisaoEntrega);
@@ -27,25 +27,24 @@ public class Pedido {
 		this.setEnderecoEntrega(enderecoEntrega);
 		this.setCliente(cliente);
 	}
-	
-	
+
 	public void adicionarItem(int codigo, int quantidade, double valorUnitario, double valorDesconto, Produto produto) {
-		Item item = new Item(codigo,quantidade,valorUnitario,valorDesconto,produto);
+		Item item = new Item(codigo, quantidade, valorUnitario, valorDesconto, produto);
 		itens.add(item);
 	}
-	
-	public ArrayList<Item> getItens(){
-		return 	itens;
+
+	public ArrayList<Item> getItens() {
+		return itens;
 	}
 
 	public Double obterTotal() {
 		Double total = 0.0;
-		for(Item item: itens) {
+		for (Item item : itens) {
 			total += item.obterTotal();
 		}
 		return total;
 	}
-	
+
 	public int getCodigo() {
 		return codigo;
 	}
@@ -102,12 +101,11 @@ public class Pedido {
 		this.cliente = cliente;
 	}
 
-
 	@Override
 	public String toString() {
 		return "Pedido [codigo=" + codigo + ", dataCriacao=" + dataCriacao + ", dataPrevisaoEntrega="
 				+ dataPrevisaoEntrega + ", status=" + status + ", transportadora=" + transportadora
 				+ ", enderecoEntrega=" + enderecoEntrega + ", cliente=" + cliente + ", itens=" + itens + "]";
 	}
-	
+
 }

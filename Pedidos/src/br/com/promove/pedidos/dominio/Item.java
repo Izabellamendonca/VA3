@@ -1,17 +1,17 @@
 package br.com.promove.pedidos.dominio;
 
 public class Item {
-	
+
 	private int codigo;
 	private int quantidade;
 	private double valorUnitario;
 	private double valorDesconto;
 	private Produto produto;
-	
+
 	public Item() {
-		
+
 	}
-	
+
 	public Item(int codigo, int quantidade, double valorUnitario, double valorDesconto, Produto produto) {
 		this.setCodigo(codigo);
 		this.setQuantidade(quantidade);
@@ -21,9 +21,9 @@ public class Item {
 	}
 
 	public Double obterTotal() {
-		return getQuantidade()*getValorUnitario()-getValorDesconto();
+		return getQuantidade() * getValorUnitario() - getValorDesconto();
 	}
-	
+
 	public Produto getProduto() {
 		return produto;
 	}
@@ -69,5 +69,5 @@ public class Item {
 		return "Item [codigo=" + codigo + ", quantidade=" + quantidade + ", valorUnitario=" + valorUnitario
 				+ ", valorDesconto=" + valorDesconto + ", produto=" + produto + "]";
 	}
-	
+
 }

@@ -1,13 +1,13 @@
 package br.com.promove.pedidos.dominio;
 
 public class Endereco {
-	
+
 	private String logradouro;
 	private String cidade;
 	private String cep;
 	private TipoLogradouro tipoLogradouro;
 	private TipoUF uf;
-	
+
 	public Endereco(String logradouro, String cidade, String cep, TipoLogradouro tipoLogradouro, TipoUF uf) {
 		this.setLogradouro(logradouro);
 		this.setCidade(cidade);
@@ -15,9 +15,9 @@ public class Endereco {
 		this.setTipoLogradouro(tipoLogradouro);
 		this.setUf(uf);
 	}
-	
+
 	public Endereco() {
-		
+
 	}
 
 	public TipoLogradouro getTipoLogradouro() {
@@ -39,23 +39,23 @@ public class Endereco {
 	public String getLogradouro() {
 		return logradouro;
 	}
-	
+
 	public void setLogradouro(String logradouro) {
 		this.logradouro = logradouro;
 	}
-	
+
 	public String getCidade() {
 		return cidade;
 	}
-	
+
 	public void setCidade(String cidade) {
 		this.cidade = cidade;
 	}
-	
+
 	public String getCep() {
 		return cep;
 	}
-	
+
 	public void setCep(String cep) {
 		this.cep = cep;
 	}
@@ -65,5 +65,5 @@ public class Endereco {
 		return "Endereco [logradouro=" + logradouro + ", cidade=" + cidade + ", cep=" + cep + ", tipoLogradouro="
 				+ tipoLogradouro + ", uf=" + uf + "]";
 	}
-	
+
 }
